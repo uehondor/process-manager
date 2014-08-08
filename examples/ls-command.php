@@ -6,7 +6,7 @@ use Symfony\Component\Process\Process;
 use Uyi\ProcessManager\AsyncProcessManager;
 
 $manager = new AsyncProcessManager();
-$nProcesses = 125; // Changing this number should not change the time taken to execute all processes
+$nProcesses = 124; // Changing this number should not change the time taken to execute all processes
 
 for ($i = 0; $i < $nProcesses; $i++) {
     $manager->addProcess(new Process('ls -la && sleep 10'));
